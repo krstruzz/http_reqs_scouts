@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cub Scouts</title>
+</head>
+<body>
+  <h2>Scouts:</h2>
+  <my-scouts></my-scouts>
+  <ul class="scouts">
+      <li *ngFor="let scout of scouts">
+          <span class="badge">{{scout.id}}</span> {{scout.name}}
+      </li>
+  </ul>
+  <!--div *ngIf="selectedScout != null">
+      <h2>
+          {{selectedScout.name | uppercase}} is a cub scout
+      </h2>
+      <button (click)="gotoDetail()">View Details</button>
+  </div-->
+
+</body>
+</html>
