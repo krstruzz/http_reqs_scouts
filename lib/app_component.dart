@@ -31,14 +31,14 @@ import 'dart:async';
     <h2>Scouts:</h2>
     <ul class="scouts">
       <li *ngFor="let scout of scouts">
-          <span class="badge">{{scout.id}}</span> {{scout.name}}
+          <span class="badge">{{scout.id}}</span> {{scout.firstName}}
       </li>
     </ul>
   ''',
-  directives: const [ROUTER_DIRECTIVES],
+  directives: const [coreDirectives, routerDirectives],
   providers: const [ScoutService],
   styleUrls: const ['app_component.css'],
-  pipes: const [COMMON_PIPES],
+  pipes: const [commonPipes],
 )
 
 class AppComponent implements OnInit {

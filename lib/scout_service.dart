@@ -1,5 +1,5 @@
 import 'package:angular/angular.dart';
-import 'package:http_reqs_dart/src/scouts/scout.dart';
+import 'package:http_reqs_scouts/src/scouts/scout.dart';
 
 import 'dart:async';
 import 'dart:convert';
